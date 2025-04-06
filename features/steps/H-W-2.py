@@ -1,3 +1,4 @@
+from cffi.cffi_opcode import CLASS_NAME
 from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
@@ -12,8 +13,7 @@ driver_path = ChromeDriverManager().install()
 service = Service(driver_path)
 driver: WebDriver = webdriver.Chrome(service=service)
 driver.maximize_window()
-sleep(5)
-driver.get('https://www.target.com/')
 
-driver.find_element(By.ID, 'search')
-driver.find_element(By.ID, "searchMobile")
+# open the url
+driver.get('https://www.amazon.com')
+
