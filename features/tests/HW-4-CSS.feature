@@ -3,8 +3,14 @@ Feature: User can open target.com/circle
   # Enter feature description here
 
   Scenario: user can open find a right card for you
-  Given Open Target Circle page
 
+
+
+  Given open Target Circle Page
+Then  verify Links
+Given Open Target main page
+When Search word
+When Add to Cart
 
     # Enter steps here
 

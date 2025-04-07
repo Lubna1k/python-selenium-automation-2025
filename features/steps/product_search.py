@@ -30,3 +30,27 @@ def click_search_icon(context):
 def verify_found_results_text(context, search_word):
     assert search_word.lower() in context.driver.current_url.lower(), \
         f'Expected query not in {context.driver.current_url.lower()}'
+
+
+@step("Confirm Add to cart buton")
+def step_impl(context):
+    """
+    :type context: behave.runner.Context
+    """
+    raise NotImplementedError(u'STEP: And Confirm Add to cart buton')
+
+
+@step("Open cart page")
+def step_impl(context):
+    """
+    :type context: behave.runner.Context
+    """
+    raise NotImplementedError(u'STEP: And Open cart page')
+
+
+@then("Verify Cart has 1 item(Doll)")
+def step_impl(context):
+    """
+    :type context: behave.runner.Context
+    """
+    raise NotImplementedError(u'STEP: Then Verify Cart has 1 item(Doll)')

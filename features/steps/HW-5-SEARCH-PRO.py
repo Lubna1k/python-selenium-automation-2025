@@ -10,6 +10,7 @@ from time import sleep
 # get the path to the ChromeDriver executable
 driver_path = ChromeDriverManager().install()
 
+
 # create a new Chrome browser instance
 service = Service(driver_path)
 driver: WebDriver = webdriver.Chrome(service=service)
@@ -18,6 +19,8 @@ sleep(5)
 driver.get('https://www.target.com/')
 
 driver.find_element(By.ID, 'search')
+driver.find_element(By.CLASS_NAME, ("sc-f6a0119e-1 jJNrwQ")
+)
 driver.find_element(By.ID, "searchMobile")
 
 
@@ -32,6 +35,7 @@ def search_icon(context):
      context.driver.find_element(By.CSS_SELECTOR, "span.a-price-whole").click()
 
 products = context.driver.find_element (By.ID, 'add-to-cart-button').click()
+
 
 
 

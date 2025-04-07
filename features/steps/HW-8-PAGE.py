@@ -16,7 +16,7 @@ driver: WebDriver = webdriver.Chrome(service=service)
 driver.maximize_window()
 sleep(5)
 driver.get('https://www.target.com/')
-@given('Store original window')
+@By.CSS_SELECTOR ('Store original window')
 def store_original_window(context):
     context.original_window = context.app.base_page.get_current_window_handle()
     print('Original_window:', context.original_window)
