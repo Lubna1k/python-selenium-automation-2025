@@ -1,8 +1,6 @@
 # Created by lubna khan at 4/3/2025
 Feature: # Enter feature name here
 
-
-
   Scenario: Open target.com
     Given Click on Cart Icon
     When Click on Cart Cart

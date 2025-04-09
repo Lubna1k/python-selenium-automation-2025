@@ -2,15 +2,18 @@
 Feature: User can open target.com/circle
   # Enter feature description here
 
-  Scenario: user can open find a right card for you
+  Scenario: Target product search
+    Given Open Target main page
+    When Search for a table
+    Then Verify table is found in the results
 
 
 
-  Given open Target Circle Page
-Then  verify Links
-Given Open Target main page
-When Search word
-When Add to Cart
+#  Scenario: user can open find a right card for you
+#    Given open Target Circle Page
+#    Then Verify there are 6 benefit boxes
+
+
 
     # Enter steps here
 
