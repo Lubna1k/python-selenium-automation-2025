@@ -7,10 +7,10 @@ SEARCH_BTN = (By.XPATH, "//button[@data-test='@web/Search/SearchButton']")
 CART_ICON = (By.CSS_SELECTOR, "[data-test='@web/CartLink']")
 HEADER_LINKS = (By.CSS_SELECTOR, "[id*='utilityNav']")
 
-
 @given('Open target main page')
-def open_target_main(context):
-    context.driver.get('https://target.com')
+def open_main_page(context):
+    context.driver.get('https://www.target.com')
+    sleep(3)
 
 @when('Search for {search_word}')
 def search_product(context, search_word):

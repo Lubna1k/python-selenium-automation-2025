@@ -1,3 +1,5 @@
+from unittest import result
+
 from selenium.webdriver.common.by import By
 from behave import given, when, then
 
@@ -14,10 +16,14 @@ def verify_product_results(context, product):
     assert product in actual_result, f'Expected: {product}, but got Actual: {actual_result}'
 
 
-@when('user can open find a right {card}')
-def verify_open (context, card):
-    context.driver.find_element(By.ID )
-    #tomorrow i will do it
+# @when('user can open find a right {card}')
+# def verify_open (context, card):
+#     context.driver.find_element(By.ID, '')
+
+@then('Verify {card} is found in the result')
+def Verify_card_found(context, card):
+     context.driver.find_element(By.CSS_SELECTOR, '[data-test="lp-resultsCoun"]')
+
 
     # @then('Verify {link_amount} links shown')
     # def verify_all_header_links_shown(context, link_amount):
