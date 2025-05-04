@@ -2,7 +2,6 @@
 Feature: HW-5-SEARCH-PRO
   # Enter feature description here
 
-  Scenario: search product
 
   Scenario: User can search for a product on Target
     Given Open target main page
