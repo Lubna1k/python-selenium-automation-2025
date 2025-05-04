@@ -41,9 +41,9 @@ def verify_links(context, link_amount):
 
 # Search product and add to cart
 
-@given('Open Target main page')
-def open_target_main_page(context):
-    context.driver.get('https://www.target.com')
+# @given('Open target main page')
+# def open_target_main_page(context):
+#     context.driver.get('https://www.target.com')
 
 
 @when('search for {search_word}')

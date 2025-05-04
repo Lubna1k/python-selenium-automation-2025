@@ -25,11 +25,3 @@ def Verify_card_found(context, card):
      context.driver.find_element(By.CSS_SELECTOR, '[data-test="lp-resultsCoun"]')
 
 
-    # @then('Verify {link_amount} links shown')
-    # def verify_all_header_links_shown(context, link_amount):
-    #     link_amount = int(link_amount)  # "6" => int 6
-    #
-    #     links = context.driver.find_elements(*HEADER_LINKS)
-    #     print(links)
-    #     assert len(links) == link_amount, f'Expected {link_amount} links, but got {len(links)}
-    #i will do later

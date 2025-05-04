@@ -1,12 +1,10 @@
 # Created by lubna khan at 3/30/2025
-Feature: # Enter feature name here
+Feature: HW-5-SEARCH-PRO
   # Enter feature description here
 
-  Scenario: User can add a product to cart
-    Given Open Target main page
-    When Search for doll
-    And Add to cart
-    And Confirm Add to cart buton
-    And Open cart page
-    Then Verify Cart has 1 item(Doll)
-    # Enter steps here
+  Scenario: search product
+
+  Scenario: User can search for a product on Target
+    Given Open target main page
+    When Search for tea
+    Then Verify correct search results show

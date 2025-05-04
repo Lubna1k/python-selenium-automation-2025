@@ -7,7 +7,10 @@ Feature: User can open target.com/circle
     When Search for a table
     Then Verify table is found in the results
 
-
+  Scenario: target circle find a right Card
+    Given open target circle page
+    When Verify open right card
+    Then Verify Card is found
 
 #  Scenario: user can open find a right card for you
 #    Given open Target Circle Page
