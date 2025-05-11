@@ -16,9 +16,9 @@ def verify_product_results(context, product):
     assert product in actual_result, f'Expected: {product}, but got Actual: {actual_result}'
 
 
-# @when('user can open find a right {card}')
-# def verify_open (context, card):
-#     context.driver.find_element(By.ID, '')
+@when('user can open find a right {card}')
+def verify_open (context, card):
+    context.driver.find_element(By.ID, '')
 
 @then('Verify {card} is found in the result')
 def Verify_card_found(context, card):
