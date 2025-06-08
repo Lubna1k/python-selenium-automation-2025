@@ -15,3 +15,11 @@ def search_product(context):
 
 
 #@then('Verify correct search results show')
+# @given('Open target')
+# def open_target_main(context):
+#     context.driver.get('https://www.target.com/')
+#
+# @when('search for mug')
+# def search_product(context):
+#     context.driver.find_element(By.XPATH, "//button[@data-test='@web/Search/SearchButton']").click()
+#     sleep(6)

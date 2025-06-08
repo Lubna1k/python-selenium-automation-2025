@@ -7,23 +7,11 @@ Feature: User can open target.com/circle
     When Search for a table
     Then Verify table is found in the results
 
-  Scenario: target circle find a right Card
-    Given open target circle page
-    When Verify open right card
-    Then Verify Card is found
 
-#  Scenario: user can open find a right card for you
-#    Given open Target Circle Page
-#    Then Verify there are 6 benefit boxes
-
-
-
-    # Enter steps here
-
-#  Feature: Test Scenarios for Search functionality
+#  Scenario: user can find right card
+#      When target circle page
+#      Then Verify card is found in the results
 #
-##  Scenario: User can search for a product
-##    Given Open Google page
-##    When Input Car into search field
-##    And Click on search icon
-##    Then Product results for Car are shown
+#
+#Scenario: target help
+#  Given target Help
