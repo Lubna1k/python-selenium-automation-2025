@@ -4,7 +4,8 @@ Feature: Target Circle Benefits Verification
 
 Scenario: Verify Target Circle benefits
     Given I am on the Target Circle page
-    #Then Verify page is open
+    Then Verify page is correct
+    When user click on circle btn
 
 Scenario: Page is opening
    #Given I should see at least 10 benefit cells

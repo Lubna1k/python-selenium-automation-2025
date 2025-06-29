@@ -14,6 +14,15 @@ def step_impl(context):
     context.driver.get("https://www.target.com/circle")
 
 
+@then("Verify page is correct")
+def verify_page(context):
+    context.driver.get("https://www.target.com/circle")
+
+
+@when("user click on circle btn")
+def Verify_click_circle_btn(context):
+    context.driver.find_element(By.XPATH, "https://www.target.com/circle,")
+
 # Verify Links-LUBNA
 #@given('target circle page')
 #def open_target(context):

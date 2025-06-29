@@ -26,7 +26,7 @@ def verify_cart_is_empty(context):
     assert expected_text in actual_text, f'Error. Text {expected_text} not in {actual_text}'
 
 
-# @then("Verify Your cart is 'empty' message is shown")
+#@then("Verify Your cart is 'empty' message is shown")
 # def verify_cart_empty(context):
 #     expected_result = "Your cart is empty"
 #     actual_result = context.driver.find_element(By.CSS_SELECTOR, "[data-test='boxEmptyMsg']").text
