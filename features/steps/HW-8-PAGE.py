@@ -1,5 +1,5 @@
-from behave import given, when, then
-from time import sleep
+from behave import when, then
+
 
 
 @when('Store original window')

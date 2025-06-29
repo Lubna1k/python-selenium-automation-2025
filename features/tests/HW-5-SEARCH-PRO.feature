@@ -1,22 +1,16 @@
-# Created by lubna khan at 3/30/2025
-Feature: HW-5-SEARCH-PRO
-  # Enter feature description here
+Feature: HW-5-SEARCH-PRO-TEST CASES
+  #1. Go over your code and remove sleep() wherever possible.
+  #Replace sleep() with wait.until if possible.
+  #If you can’t remove sleep(), keep it, for example, for target search or opening product details page.
+  #
+  #2. Review a test case with a loop. Modify it to search for product colors of another product. You can use color selection for any product page you like: it should click on each color and verify that color has been selected.
+  #Product examples with multiple colors:
 
 
-  Scenario: User can search for a product on Target
-    Given Open target main page
+   Scenario: User can search for a product on Target
+    Given Open target main pages
     When Search for tea
-    #Then Verify correct search results show
+    Then Verify correct search results show
 
 
-Scenario: Click on Add to Cart button
-    Given Open target main page
-    When Search for mug
-
-
-    #Scenario: click on cart btn
-    #Given Open target main page
-    #When Store product name
-    #When Confirm Add to Cart button from side navigation
-    #When Click on Add to Cart button
-    #Then  for TEXT
+#search for product colors of another product

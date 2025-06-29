@@ -1,17 +1,24 @@
-# Created by lubna khan at 3/30/2025
-Feature: User can open target.com/circle
-  # Enter feature description here
+#Feature: User can open target circle
 
-  Scenario: Target product search
-    Given Open Target main page
-    When Search for a table
-    Then Verify table is found in the results
+Feature: Target Circle Benefits Verification
+
+Scenario: Verify Target Circle benefits
+    Given I am on the Target Circle page
+    #Then Verify page is open
+
+Scenario: Page is opening
+   #Given I should see at least 10 benefit cells
+  #  Then  Verify page is open
+   # Then I should see at least 10 benefit cells
+
+#Scenario: the Target Circle page
+#  Given target circle page
+# # When Verify links here
+##  When find for links
+##  Then Verify page has 10 benefit cell
 
 
-#  Scenario: user can find right card
-#      When target circle page
-#      Then Verify card is found in the results
-#
-#
-#Scenario: target help
-#  Given target Help
+  #lubna creat
+  #search 10 benefit cells
+
+
